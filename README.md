@@ -1,57 +1,122 @@
-# Movie-Marketplace
+🎬 Movie Marketplace
+A feature-rich Console-Based Movie Commerce Platform built entirely in Core Java.
+This project simulates a real-world entertainment ecosystem where users can:
 
-# 🎬 Movie Marketplace
+rent movies
+subscribe to bundled services
+participate in movie production roles
+buy and sell movies within the platform
 
-A feature-rich **Console-Based Movie Rental System** built entirely in **Core Java**. 
+It was designed as a hands-on environment to master advanced OOP concepts, system architecture, and real-world platform modeling.
 
-This project simulates a real-world e-commerce platform where users can sign up, search for real movies (using live API data), and rent them in different formats. It was designed as a "Gym" to master advanced Object-Oriented Programming (OOP) concepts and software architecture.
+🚀 System Overview
+Movie Marketplace models a multi-service entertainment economy built around three core operational layers:
+🎟 Rental System
+Temporary access to movies through physical or online delivery.
+📦 Subscription System
+Bundled and synchronized service plans offering grouped entertainment access.
+🎥 Buy / Sell & Production System
+Users can participate in movie creation and ownership workflows by selecting creative or production roles (e.g., producer, director, actor, music director).
+This combines content consumption + membership models + production participation into a single unified simulation.
 
-## 🚀 Key Features
+✨ Key Features
+🌐 Live Movie Data
+Integrates with the OMDb API using Java 11 HttpClient to fetch real-time movie titles, ratings, and details.
+🔐 User Authentication
+Secure signup and login system with persistent storage using Java serialization.
+💰 Smart Pricing Engine
+Dynamic cost calculation based on IMDb ratings.
+🔄 Polymorphic Rentals
 
-* **Live Movie Data:** Integrates with the **OMDb API** using Java 11 `HttpClient` to fetch real-time movie titles, ratings, and details.
-* **User Authentication:** Secure Signup and Login system with data persistence (users are saved to local files so data isn't lost on exit).
-* **Smart Pricing Engine:** Dynamic cost calculation based on IMDb ratings (e.g., highly-rated movies cost more).
-* **Polymorphic Rentals:**
-    * **Physical Rentals:** Handles shipping addresses and physical inventory logic.
-    * **Online Rentals:** Handles video quality (720p/1080p/4K) and streaming logic.
-* **Clean Architecture:** strictly separated logic using **Encapsulation**, **Abstraction**, and **Inheritance**.
+Physical rentals with inventory and shipping logic
+Online rentals with streaming quality control
 
-## 🛠️ Tech Stack
+📦 Subscription Bundles
+Grouped service plans with expandable feature architecture and synchronization concepts.
+🎬 Role-Based Movie Creation
+Users participate in production by selecting industry roles that trigger different system workflows.
+🧱 Modular Architecture
+Strict separation of responsibilities using encapsulation, abstraction, and inheritance.
 
-* **Language:** Java (JDK 11+)
-* **Networking:** `java.net.http.HttpClient` (No external libraries used)
-* **Data Persistence:** Java Serialization (`java.io.Serializable`)
-* **Architecture:** OOP (Object-Oriented Programming)
+🛠️ Tech Stack
 
-## 🧩 Concepts Applied
+Language: Java (JDK 11+)
+Networking: java.net.http.HttpClient
+Data Persistence: Java Serialization
+API Integration: OMDb REST API
+Architecture: Object-Oriented Programming
 
-This project serves as a practical implementation of:
-* **Polymorphism:** Handling different rental types (`Physical` vs `Online`) through a unified `Rental` abstract class.
-* **Abstraction:** Enforcing business logic contracts (e.g., every rental *must* have a receipt method).
-* **Encapsulation:** Protecting user data through private fields and getters/setters.
-* **File I/O:** Saving and loading the user database to/from disk.
-* **REST API Consumption:** Parsing JSON responses manually to understand data structures.
 
-## 🏃‍♂️ How to Run
+🧩 Concepts Applied
+Object-Oriented Design
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YourUsername/Movie-Marketplace.git](https://github.com/YourUsername/Movie-Marketplace.git)
-    ```
-2.  **Compile the code:**
-    ```bash
-    javac Movie_Market_Place/*.java
-    ```
-3.  **Run the application:**
-    ```bash
-    java Movie_Market_Place.MarketplaceApp
-    ```
+Encapsulation of user and movie data
+Inheritance across system components
+Polymorphic rental behavior
+Abstraction of business logic
 
-## 🔮 Future Roadmap
+System Modeling
 
-* [ ] **Subscription Models:** Implementing tiered access (Basic vs. Premium) for exclusive content.
-* [ ] **Admin Dashboard:** Special login for managing inventory.
-* [ ] **Recommendation Engine:** Suggesting movies based on previous rental history.
+Multi-service platform simulation
+Role-based workflow triggering
+Economic interaction modeling
 
----
-*Built with ☕ and Java by [Your Name]*
+Data & Networking
+
+REST API consumption
+Manual JSON parsing
+File I/O persistence
+
+
+📂 Project Structure
+Movie_Market_Place/
+│
+├── MarketplaceApp.java
+├── Subscription.java
+├── Concept_Rental.java
+├── basecase.java
+├── Why_How_Explaining/
+├── README.md
+└── .gitignore
+
+
+▶️ How to Run
+Clone repository:
+git clone https://github.com/YourUsername/Movie-Marketplace.git
+
+Compile:
+javac Movie_Market_Place/*.java
+
+Run:
+java Movie_Market_Place.MarketplaceApp
+
+
+🔮 Future Roadmap
+
+Advanced subscription tiers
+GUI interface (JavaFX / Swing)
+Admin dashboard for inventory control
+Recommendation engine based on user behavior
+Database integration
+Payment simulation
+Multi-user environment
+Advanced production pipeline modeling
+
+
+🎯 Purpose of the Project
+This project serves as a structured environment for learning and demonstrating:
+
+Object-oriented system design
+Real-world platform simulation
+Modular architecture thinking
+Software scalability concepts
+
+It functions as both:
+
+a learning laboratory
+a functional system prototype
+
+
+👤 Author
+Daksh Khandelwal
+
