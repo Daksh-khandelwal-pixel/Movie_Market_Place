@@ -1,3 +1,8 @@
+package Movie_Market_Place;
+import java.util.*;
+// As long as Rental and market place code are in the same folder we don't need to write import to our main file rather just keep the same pakage name for both files. java will talk to each other automatically 
+
+
 class User {
     String username;
     String password;
